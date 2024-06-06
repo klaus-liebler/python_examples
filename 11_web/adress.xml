@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contacts>
+    <contact category="business">
+        <name>Klaus Liebler</name>
+        <adress>Neidenburger Straße 43</adress>
+        <postcode>45897</postcode>
+        <city>Gelsenkirchen</city>
+    </contact>
+        <contact category="personal">
+        <name>Erika Mustermann</name>
+        <adress>Teststraße 1</adress>
+        <postcode>12345</postcode>
+        <city>Musterstadt</city>
+    </contact>
+</contacts>

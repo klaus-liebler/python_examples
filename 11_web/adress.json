@@ -1,0 +1,18 @@
+{
+    "contacts": [
+        {
+            "name": "Klaus Liebler",
+            "adress":"Neidenburger Straße 43",
+            "postcode":45897,
+            "city":"Gelsenkirchen",
+            "category":"business"
+        },
+        {
+            "name": "Erika Mustermann",
+            "adress":"Teststraße 1",
+            "postcode":12345,
+            "city":"Musterstadt",
+            "category":"personal"
+        }
+    ]
+}

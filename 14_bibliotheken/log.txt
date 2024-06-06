@@ -1,0 +1,2 @@
+2024-05-28 15:35:51,914 - root - WARNING - Warn, wenn das System zwar weiterlaufen kann, aber ein Nutzereingriff notwendig ist
+2024-05-28 15:35:51,914 - root - ERROR - Error, wenn das System nicht weiterlaufen kann

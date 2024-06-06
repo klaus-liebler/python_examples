@@ -1,0 +1,5 @@
+lieblingstiere = ["Giraffe", "Elefant", "Frosch", "Schaf", "Hase"]
+mittellieblingstiere = lieblingstiere[-2:-1]
+print(mittellieblingstiere) #['Schaf']
+mittellieblingstiere = lieblingstiere[1:3]
+print(mittellieblingstiere) #['Elefant', 'Frosch']
