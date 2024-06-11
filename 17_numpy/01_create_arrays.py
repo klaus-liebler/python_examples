@@ -16,6 +16,7 @@ print()
 
 a=np.arange(15).reshape(3,5)
 print(a)
+print()
 
 b=np.linspace(0, 2*np.pi, 100)
 print(b)
