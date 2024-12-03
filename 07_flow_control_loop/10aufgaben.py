@@ -19,3 +19,8 @@ while zahl < 11:
 
 for i in range(1,11):
     print(i)
+
+j=49
+while j>40:
+    j=j-1
+    print(j)

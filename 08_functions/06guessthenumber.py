@@ -13,6 +13,6 @@ for guessesTaken in range(1, 7):
     else:
         break    # Hier geht es rein, wenn weder zu groß, noch zu klein, also richtig!
 if guess == secretNumber:
-    print('Gut gemacht. Die haben die richtige Zahl nach', guessesTaken, " Versuchen erraten.")
+    print('Gut gemacht. Sie haben die richtige Zahl nach', guessesTaken, " Versuchen erraten.")
 else:
     print('Leider haben Sie es nicht geschafft! Meine geheime Zahl war', secretNumber, '.')

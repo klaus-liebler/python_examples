@@ -58,7 +58,7 @@ def getGuess():
             print('Geben Sie genau einen Buchstaben ein!', end = '')
         elif guess in correctLetters or guess in missedLetters:
             print('Sie haben diesen Buchstaben bereits eingegeben.' , end = '')
-        elif guess not in 'abcdefghijklmnopqrstuvwxyz':
+        elif guess not in 'abcdefghijklmnopqrstuvwxyzäüöß':
             print('Das war kein Buchstabe! ', end = '')
         else:
             return guess

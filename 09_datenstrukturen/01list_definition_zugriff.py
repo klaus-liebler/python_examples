@@ -1,9 +1,8 @@
 lieblingstiere = ["Giraffe", "Elefant", "Frosch"]
 liebingszahlen = [4, 64, 256]
-
-print("Mein absolutes Lieblingstier ist ", lieblingstiere[0])
-print("Mein Nicht-Lieblingstier ist ", lieblingstiere[len(lieblingstiere)-1])
-print("Meine drittliebste Zahl ist ", liebingszahlen[2])
+print("Mein absolutes Lieblingstier ist", lieblingstiere[0])
+print("Mein Nicht-Lieblingstier ist", lieblingstiere[len(lieblingstiere)-1])
+print("Meine drittliebste Zahl ist", liebingszahlen[2])
 
 lieblingstiere = ["Giraffe", "Elefant", "Frosch"]
 print("Mein zwanzigliebstes Tier ist ", lieblingstiere[19])

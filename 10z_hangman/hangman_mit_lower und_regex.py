@@ -60,7 +60,7 @@ def getGuess():
             print('Geben Sie genau einen Buchstaben ein!', end = '')
         elif guess in correctLetters or guess in missedLetters:
             print('Sie haben diesen Buchstaben bereits eingegeben.' , end = '')
-        elif guess not in 'abcdefghijklmnopqrstuvwxyz':
+        elif guess not in 'abcdefghijklmnopqrstuvwxyzäöüß':
             print('Das war kein Buchstabe! ', end = '')
         else:
             return guess
@@ -69,7 +69,7 @@ def checkBadwords():
     reg_badwords = re.compile(r"(sex)|(xxx)|(v[i!1][a@]gr[a@])")
     for w in words:
         w=w.lower()
-        if reg_badwords.search(w):
+        if reg_badwords.search(w)!=None:
             print("Schlimmes Wort gefunden: \""+w+"\"")
             sys.exit()
 

@@ -18,7 +18,7 @@ a=2 #das ist die globale Variable a
 b=10 #das ist die globale Variable b
 aaa1()
 aaa2()
-print("GlobalScope: Globale Var. a", a)
+print("GlobalScope: Globale Var. a", a) #hat noch den Wert 3!
 bbb()
 print("Die globale Var. existiert weiterhin. Wert ", b)
 #print(c) #Dies wäre ein Fehler. c ist global nicht gültig.

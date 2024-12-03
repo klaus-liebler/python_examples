@@ -1,7 +1,7 @@
 import urllib.request
 import urllib.parse
 import json
-data = {'q':'Osnabrück', 'APPID':"4a48ca03578c3198f24b59bd2e2e60fd"}
+data = {'q':'Greven', 'APPID':"4a48ca03578c3198f24b59bd2e2e60fd"}
 url_values = urllib.parse.urlencode(data)
 url = 'http://api.openweathermap.org/data/2.5/weather'
 full_url = url + '?' + url_values
