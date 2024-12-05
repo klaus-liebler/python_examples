@@ -6,7 +6,7 @@ lied_inhalt = lied_datei.read()
 lied_datei.close()
 print(lied_inhalt)
 
-lied_datei = open(p)
+lied_datei = open(p, encoding="utf-8")
 lied_inhalt_zeilenweise = lied_datei.readlines()
 lied_datei.close()
 for liedzeile in lied_inhalt_zeilenweise:
