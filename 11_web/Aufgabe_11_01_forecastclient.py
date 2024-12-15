@@ -25,7 +25,7 @@ with urllib.request.urlopen(full_url) as response:
            break
     if forecast24h != None:
         temp=forecast24h["main"]["temp"]-273.15
-        date = datetime.datetime.fromtimestamp(forecast["dt"])
+        date = datetime.datetime.fromtimestamp(forecast24h["dt"])
         print(f"In {city} wird am {date:%d.%m.%Y} um {date:%H:%M} eine Temperatur von {temp:.2f}°C erwartet")
     else:
         print("Keine Vorhersage für Morgen gefunden")
