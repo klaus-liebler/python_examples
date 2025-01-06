@@ -1,11 +1,13 @@
 #https://david-kyn.medium.com/workplace-automation-generate-pdf-reports-using-python-fa75c50e7715
+import fpdf
+from fpdf import FPDF
 import time
 import pandas as pd
 import matplotlib.pyplot as plt
 import dataframe_image as dfi
-import fpdf
 
-df = pd.read_csv("data/KleineHochschulstatistik WiSe2019.csv", header=2)
+#df = pd.read_csv("data/KleineHochschulstatistik WiSe2019.csv", header=2)
+df = pd.read_csv("data/Annual_Sales.csv")
 
 def color_pos_neg_value(value):
     if value < 0:
@@ -17,8 +19,15 @@ def color_pos_neg_value(value):
     return 'color: %s' % color
 
 # Apply styling to dataframe
-df=df.hide_index()
-styled_df=df.bar(subset=["Total Sales",], color='lightgreen').applymap(color_pos_neg_value, subset=['Sales Pct Change'])
+styled_df = df.style.format({'Year of Release': "{:.0f}",
+                      'NA Sales': "{:.2f}",
+                      'EU Sales': "{:.2f}",
+                      'JP Sales': "{:.2f}",
+                      'Other Sales': "{:.2f}",
+                      'Global Sales': "{:.2f}",
+                      'Total Sales': "{:.2f}",
+                      'Sales Pct Change': "{:.2f}%",
+                     }).bar(subset=["Total Sales",], color='lightgreen').applymap(color_pos_neg_value, subset=['Sales Pct Change'])
 
 
 dfi.export(styled_df, 'resources/annual_sales.png')
@@ -48,7 +57,7 @@ def generate_matplotlib_piechart(df, filename):
     
     # Pie chart, where the slices will be ordered and plotted counter-clockwise:
     labels = ["NA Sales", "EU Sales", "JP Sales", "Other Sales", "Global Sales"]
-    sales_value = df[["NA Sales", "EU Sales", "JP Sales", "Other Sales", "Global Sales"]].tail(1)
+    sales_value = df[["NA Sales", "EU Sales", "JP Sales", "Other Sales", "Global Sales"]].tail(1).values.flatten()
     
     # Colors
     colors = ['#E63946','#F1FAEE','#A8DADC','#457B9D','#1D3557', '#9BF6FF']
