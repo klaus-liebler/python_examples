@@ -15,5 +15,4 @@ WHERE F.ort="New York" and LI.menge>0""")
 for row in result:
     print(f"{row[0]}: {row[1]}EUR-ct --> {row[1]*usd:.2f}US-ct")
 
-
 conn.close()
