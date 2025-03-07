@@ -1,7 +1,6 @@
 import torch
 import matplotlib.pyplot as plt
 from PIL import Image
-import torch 
 from torchvision import transforms
 from torchvision import models
 from torchvision.models.alexnet import AlexNet_Weights
