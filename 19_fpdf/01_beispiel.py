@@ -15,9 +15,9 @@ pdf.rect(x = 55, y = 20, w = 100, h = 55, style = '')
 
 pdf.cell(210, 10, 'Osnabrück ist suuuper', 0, 1, align="C")
 
-pdf.set_fill_color(128, 166, 197)
-pdf.set_draw_color(41, 53, 50)
-pdf.rect(80, 115, 50, 10, 'DF')
+pdf.set_fill_color(255, 255, 0)
+pdf.set_draw_color(255, 0, 0)
+pdf.rect(80, 115, 50, 10, style='DF')
 
 
 pdf.output('sample.pdf', "F")

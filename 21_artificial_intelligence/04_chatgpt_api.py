@@ -20,7 +20,7 @@ def sendTextToOpenAi(text):
     globalMessage.append({'role': 'user', 'content': text})
 
     completion = client.chat.completions.create(
-        model='gpt-4o',
+        model='gpt-4o-mini',
         messages=globalMessage,
         temperature=1
     )
@@ -88,8 +88,10 @@ def sendTextAndPicToOpenAi(text, pic):
 
     return answer
 
+#print(generatePic('Eine Kuh auf einer grünen Wiese'))
+
 while True:
-    #print(generatePic('Eine Kuh auf einer grünen Wiese'))
+    
     #print(sendTextAndPicToOpenAi('Was siehst du auf dem Bild?', 'bild1.jpg'))
     myInput = input('Du: ')
     answer = sendTextToOpenAi(myInput)
