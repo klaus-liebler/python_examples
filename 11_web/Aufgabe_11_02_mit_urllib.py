@@ -1,11 +1,13 @@
 import urllib.parse
 import urllib.request
 import json
-data = {'to':'USD'}
-url_values = urllib.parse.urlencode(data)
+# Die nächsten drei Zeilen sind am Anfang des Programms erforderlich
 opener = urllib.request.build_opener()
 opener.addheaders = [('User-Agent', 'MyApp/1.0')]
 urllib.request.install_opener(opener)
+
+data = {'to':'USD'}
+url_values = urllib.parse.urlencode(data)
 url = 'https://api.frankfurter.app/latest'
 full_url = url + '?' + url_values
 print("An den Server wird gesendet:", full_url)
