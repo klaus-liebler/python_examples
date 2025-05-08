@@ -1,5 +1,5 @@
 print("Einmaleins in wählbarer Größe")
-rangeend=15
+rangeend=17
 for i in range(1,rangeend):
     for j in range(1,rangeend):
         prod=i*j

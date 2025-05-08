@@ -1,5 +1,6 @@
 import random
 overall_streaks=0
+
 for experiment in range(10000):
     list = []
     for i in range(100):

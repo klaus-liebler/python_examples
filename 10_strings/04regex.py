@@ -6,7 +6,7 @@ telefoneRegex= re.compile(regex)
 test1 = "+438*58d434-wer"
 result = telefoneRegex.search(test1)
 print(result)
-test1 = "+49 209 9695-152"
+test1 = "+49 541 9695-152"
 result = telefoneRegex.search(test1)
 print("Die Ortsvorwahl ist", result.group(2))
 

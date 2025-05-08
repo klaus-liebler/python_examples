@@ -8,7 +8,9 @@ if name == 'Mary':
         print('OK, so I do '+task+' all day long.')
     else:
         print('Wrong password.')
+    print("Ciao, Mary!")
 else:
     print("I do not know you!")
+print("Good bye")
 
 
